@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <title>Vindinium How To</title>
+</head>
+
+<style>
+    
+    h1 {text-align:center;}
+    h2 {text-align:center;}
+    img {display:block; margin: auto; width:auto;}
+    figcaption {font-size:15px; color:gray; font-family:Georgia; text-align:center;}
+    p {text-align:center;}
+
+    
+</style>
+
+<body>
+   
+   <h1>VINDINIUM HOW TO</h1>
+   
+   <p>As stated on the website, "Vindinium is an Artificial Intelligence 
+   programming challenge. You have to take the control of a legendary hero 
+   using the programming language of your choice. You will fight with other 
+   AI for a predetermined number of turns and the hero with the greatest amount
+   of gold will win." On this page I will be explaining how i went about making my AI.
+   The first thing I needed to do was put in the skeleton of the code. I did this by 
+   cloning from a given Vindinium template. I was now ready to construct my bot. 
+   Just as with any other AI, the foundation of the bot was a series of if/else statements.
+   First, I decided that it would be good to seek out health when my bot's life went under 
+   20. Therefore, I typed in the following: <br> if(bot.yourBot.life &lt; 20){<br/>
+   task = &quot;getHealth&quot;;} <br>My bot also needed to know when to attack, so I 
+   decided that whenever the bot was healthy and had more than 60 life would be
+   a good time to attack other bots. So, I put in the following right after: <br> 
+   else if(bot.yourBot.life &gt; 60){<br/> task = &quot;attack&quot;<br/> } <br>
+   Finally, it needed to know when to go to freemines, so I typed in this: <br>
+   else{<br/> task = &quot;freemines&quot;; <br/> }. <br> Again, in summary what 
+   this does is make the bot think "Is my health below 20? If so get health. 
+   Is my health above 60? If so, then attack. If my health is between these
+   two options, go to freemines." Now that my bot know WHAT to do though, 
+   I need to teach it HOW to carry out all of this. As is commented in the 
+   code itself, this is where the next segments of the writing come in. 
+   The three pieces of code tell how to get to the nearest freemine, tavern, 
+   and enemy respectively. 
+</p>
+   
+   
+
+</body>
+</html>
